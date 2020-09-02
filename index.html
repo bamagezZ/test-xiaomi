@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习小米官网</title>
+    <style>
+        /* 字体声明 */
+        @font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?h9bfn9');
+    src:  url('fonts/icomoon.eot?h9bfn9#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?h9bfn9') format('truetype'),
+        url('fonts/icomoon.woff?h9bfn9') format('woff'),
+        url('fonts/icomoon.svg?h9bfn9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        .w{
+            width:1290px;
+            margin:auto;
+        }
+        .banner{
+            height:120px;
+            background-image:url(images/banner.jpg);
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size:auto 120px;
+        }
+        .menu{
+            float:left;
+            width:100%;
+            height:30px;
+            background-color:black;
+        }
+        .lef{
+            float:left;
+            line-height:30px;
+
+        }
+        .lef li,.rig li,.nav1 li{
+            float:left;
+        }
+        .rig{
+            float:right;
+            line-height:30px;
+        }
+        li{
+
+            list-style:none;
+         
+        }
+        li a{
+            text-decoration:none;
+            font-size:13px;
+            color:rgb(184, 178, 178);
+        }
+        li a:hover{
+            color:white;
+        }
+        .sx{
+            color:rgba(214, 212, 212,.3);
+            line-height:30px;
+            padding:0 5px;
+        }
+        .icon{
+            font-family: 'icomoon';
+            font-size:10px;
+            padding:3px 2px 2px 2px;
+        }
+        .so{
+            border:1px solid black;
+            border-left:none;
+            margin-top:5px;
+        }
+        .solink{
+            text-decoration:none;
+        }
+        .menu1{
+            height:90px;
+        }
+        .img1{
+            float:left;
+            width:49px;
+            height:49px;
+            background-color:orange;
+            margin:5px 0;
+        }
+        .img2{
+            float:left;
+            width:165px;
+            height:55px;
+            margin:2px 15px;
+        }
+        .nav1{
+            float:left;
+            margin-top:15px;
+        }
+        .nav1 li{
+            padding:0 10px;
+        }
+        .nav1 li a{
+            display:block;
+            font-size:20px;
+            color:black;
+        }
+        .nav1 li a:hover{
+            color:orange;
+        }
+        .search{
+            float:right;
+            margin:16px 0px;
+ 
+        }
+        .mid{
+            width:1290px;
+            position:relative;
+            height:440px;
+            background:url(images/bantu.jpg) no-repeat top center;
+            background-size:1290px auto;
+
+        }
+        .midl{
+            position:absolute;
+            width:270px;
+            height:100%;
+            background-color:rgba(92, 91, 91, 0.3);
+        }
+        .midlul li{
+            height:50px;
+            line-height:50px;
+            padding:0 40px;
+
+        }
+        .start{
+            margin-top:15px;
+        }
+
+        .midlul li a{
+            font-size:20px;
+        }
+        .midlul li a span{
+            float:right;
+        }
+        .midx{
+            margin:10px auto;
+            height:200px;
+            /* background-color:red; */
+        }
+        .midx1{
+            float:left;
+            height:100%;
+            width:270px;
+            background-color:#4d4a4a;
+        }
+        .midx2,.midx3,.midx4{
+            float:left;
+            margin-left:20px;
+            width:320px;
+            height:200px;
+            /* background-color:orange; */
+        }
+        .midxul{
+
+            margin:80px auto;
+
+        }
+        .midxul li{
+            display:inline-block;
+            width:85px;
+            text-align:center;
+            border-right:1px solid #f3f3f3;
+        }
+        .midxul .li0,.midxul .li3{
+            border-right:none;
+        }
+        .li1,.li2,.li3{
+            border-top:1px solid #f3f3f3;
+        }
+        .midxul li a{
+            font-size:18px;
+        }
+        .sg{
+            width:1290px;
+            height:80px;
+            /* background-color:red; */
+        }
+        .totalsg{
+            height:1450px;
+            background-color:rgba(218, 216, 216, 0.3);
+        }
+        .xmsg{
+            float:left;
+            line-height:80px;
+        }
+        .zy{
+            float:right;
+            border:1px solid #494848;
+            margin-top:30px;
+            margin-bottom:10px;
+        }
+        .zb{
+            border-right:1px solid #494848;
+            padding-right:5px;
+        }
+        .sgd{
+            height:400px;
+        }
+        .sg1,.sg2,.sg3,.sg4,.sg5{
+            /* display:inline-block; */
+            float:left;
+            width:240px;
+            height:370px;
+            margin-left:22px;
+            background-color:rgb(253, 250, 250);
+            border-top:1px solid blue;
+        }
+        .sg1{
+            margin-left:0;
+            border-top:1px solid red;
+        }
+        .tv{
+            width:200px;
+            margin-left:20px;
+        }
+        .sgx{
+            width:1290px;
+            height:120px;
+            margin:0 auto;
+            background:url(images/sgx.jpg) no-repeat center center;
+            background-size:1290px auto;
+        }
+        .ck{
+            color:#c5c1c1;
+           
+        }
+
+        .sg1 h3,.sg1 h4,.sg2 h3,.sg2 h4,.sg3 h4,.sg3 h3{
+            text-align:center;
+            margin-top:10px;
+        }
+        .sg1 h3,.sg1 h4{
+            margin-top:50px;
+        }
+        .gd{
+            
+            width:40px;
+            height:200px;
+            /* background-color:red; */
+            position:fixed;
+            left:50%;
+            margin-left:645px; 
+            bottom:100px;
+            border:1px solid #b9b8b8;
+            border-bottom:none;
+        }
+        .gd ul li{
+            
+            margin:15px 0;
+            text-align:center;
+            padding-bottom:1px;
+            border-bottom:1px solid #b9b8b8;
+        }
+        .gd ul li a:hover{
+            color:orange;
+        }
+        .gdi{
+            font-size:20px;
+            
+        }
+        .sgxz{
+            float:left;
+        }
+        .sgxy{
+            float:right;
+        }
+        .sgxz,.sgxy{
+            margin-top:40px;
+        }
+        .phone{
+            height:700px;
+            margin-top:20px;
+        }
+        .phonebig{
+            float:left;
+            height:100%;
+            width:230px;
+            background:url(images/phone.jpg) no-repeat center center;
+            background-size:auto 700px;
+        }
+        .sgxx{
+            height:70px;
+        }
+        .phonesmall{
+            float:left;
+            width:1060px;
+            height:100%;
+            /* background-color:#494848; */
+        }
+        .phonesmall div{
+            float:left;
+            width:245px;
+            margin-left:20px;
+            height:340px;
+            background-color:rgb(253, 252, 252);
+        }
+        .phone1{
+            margin-bottom:20px;
+        }
+        .phone1 img{
+            height:60%;
+            margin:15px;
+        }
+        .phone1 p{
+            font-size:10px;
+            text-align:center;
+            padding-bottom:5px;
+        }
+        .co_grey{
+            color:grey;
+        }
+        .co_orange{
+            color:orange;
+        }
+        .footer{
+            width:100%;
+            height:500px;
+            background-color:white;
+        }
+        .footernav1 li{
+            display:inline-block;
+            width:250px;
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            margin:20px 0;
+            border-right:1px solid grey;
+        }
+        .footernav1 .end{
+            border-right:none;
+        }
+        .footernav1 li a,.footernav1 li a span{
+            font-size:20px;
+        }
+        .footernav1 li a:hover{
+            color:orange;
+        }
+        .footernav2{
+            float:left;
+            width:100px;
+            height:170px;
+            margin:10px 70px 5px 0;
+        }
+        .footernav2 span{
+            display:block;
+            margin:20px 0;
+        }
+        .footernav2 ul li{
+            padding:5px 0;
+            
+        }
+        .footernav2 ul li a:hover{
+            color:orange;
+        }
+        /* .endnav2{
+            margin-right:0;
+        } */
+        .footernavy{
+            float:left;
+            margin-top:30px;
+            width:260px;
+            height:170px;
+        }
+        .footernavy span{
+            display:block;
+            text-align:center;
+            margin-bottom:10px;
+            
+        }
+        .navy1,.navy3{
+            color:orange;
+        }
+        .navy1{
+            font-size:20px;
+        }
+        .navy3{
+            font-size:15px;
+            margin:0 auto;
+            width:90px;
+            height:20px;
+           
+            border:1px solid orange;
+        }
+        .navy2{
+            font-size:10px;
+        }
+        .footernav6 ul li{
+            display:inline-block;
+            margin:20px 0;
+            border-right:2px solid #b9b8b8;
+            padding-right:5px;
+        }
+        .footernav6 ul .lastone{
+            border-right:none;
+        }
+        .footernav6 ul li a:hover{
+            color:orange;
+        }
+        .footernav6 ul li a{
+            font-size:15px;
+        }
+        .footerlist{
+            height:230px;
+            width:100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="banner">
+    </div>
+    <div class="menu">
+        <div class="w">
+            <ul class="lef">
+                <li><a href="#">小米商城</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">MIUI</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">loT</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">云服务</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">金融</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">有品</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">小爱开放平台</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">企业团购</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">资质证照</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">协议规则</a></li>
+            </ul>>
+            <ul class="rig">
+                <li><a href="#">登录</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">注册</a></li>
+                <li class="sx">|</li>
+                <li><a href="#">消息通知</a></li>
+                <li class="sx">|</li>
+                <li><a href="#"><span class="icon"></span>购物车（0）</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="menu1 w">
+        <div class="img1">
+            <img src="images/mi.png">
+        </div>
+        <div class="img2">
+            <img src="images/xm.gif">
+        </div>
+        <ul class="nav1">
+            <li><a href="#">小米手机</a></li>
+            <li><a href="#">Redmi红米</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">社区</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" value="洗衣机"><a href="#" class="solink"><span class="so icon"></span></a>
+        </div>
+        
+    </div>
+    <div class="mid w">
+        <div class="midl">
+            <ul class="midlul">
+                <li class="start"><a href="#">手机&nbsp;电话卡<span>&gt;</span></a></li>
+                <li><a href="#">电视&nbsp;盒子<span>&gt;</span></a></li>
+                <li><a href="#">笔记本&nbsp;显示器<span>&gt;</span></a></li>
+                <li><a href="#">家电&nbsp;插线板<span>&gt;</span></a></li>
+                <li><a href="#">出行&nbsp;穿戴<span>&gt;</span></a></li>
+                <li><a href="#">智能&nbsp;路由器<span>&gt;</span></a></li>
+                <li><a href="#">电源&nbsp;配件<span>&gt;</span></a></li>
+                <li class="end"><a href="#">耳机&nbsp;音响<span>&gt;</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gd">
+        <ul>
+            <li><a href="#"><span class="gdi icon"></span></a></li>
+            <li><a href="#"><span class="gdi icon"></span></a></li>
+            <li><a href="#"><span class="gdi icon"></span></a></li>
+            <li><a href="#"><span class="gdi icon"></span></a></li>
+            <li><a href="#"><span class="gdi icon"></span></a></li>
+        </ul>
+    </div>
+    <div class="midx w">
+        <div class="midx1">
+            <ul class="midxul">
+                <li><a href="#">小米秒杀</a></li>
+                <li><a href="#">企业团购</a></li>
+                <li class="li0"><a href="#">F码通道</a></li>
+                <li class="li1"><a href="#">米粉卡</a></li>
+                <li class="li2"><a href="#">以旧换新</a></li>
+                <li class="li3"><a href="#">话费充值</a></li>
+            </ul>
+        </div>
+        <img src="images/sma1.jpg" class="midx2">
+        <img src="images/sma2.jpg" class="midx3">
+        <img src="images/sma3.jpg" class="midx4">
+    </div>
+    <div class="totalsg">
+        <div class="sg w">
+        
+            <h2 class="xmsg">小米闪购</h2>
+            <div class="zy">
+                <span class="zb">&lt;</span>
+                <span class="yb">&gt;</span>
+            </div>
+        </div>
+        <div class="sgd w">
+            <div class="sg1">
+                <h3>20:00场</h3>
+                <h4>距离结束还有</h4>
+            </div>
+            <div class="sg2">
+                <img src="images/tv.jpg" alt="电视机" class="tv">
+                <h3>小米曲面显示器 34英寸</h3>
+                <h4 class="ck">宽广全景视野</h4>
+                <h4>2199元<s class="ck">2499元</s></h4>
+            </div>
+            <div class="sg3">
+                <img src="images/print.jpg" alt="电视机" class="tv">
+                <h3>电饭煲</h3>
+                <h4 class="ck">宽广全景视野</h4>
+                <h4>2199元<s class="ck">2499元</s></h4>
+            </div>
+            <div class="sg4"></div>
+            <div class="sg5"></div>
+        </div>
+        <div class="sgx"></div>
+        <div class="sgxx w">
+            <h3 class="sgxz">手机</h3>
+            <span class="sgxy">查看全部&nbsp;&gt;</span>
+        </div>
+        <div class="phone w">
+            <div class="phonebig">
+
+            </div>
+            <div class="phonesmall">
+                <div class="phone1">
+                    <img src="images/phone1.jpg" alt="">
+                    <p>小米10至尊版</p>
+                    <p class="co_grey">120X变焦/120W秒充/120Hz屏幕</p>
+                    <p class="co_orange">5299元起</p>
+                </div>
+                <div class="phone1">
+                    <img src="images/phone2.jpg" alt="">
+                    <p>Redmi K30 至尊纪念版</p>
+                    <p class="co_grey">20Hz弹出全面屏</p>
+                    <p class="co_orange">1999元起</p>
+                </div>
+                <div class="phone1"></div>
+                <div class="phone1"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footernav w">
+            <ul class="footernav1">
+                <li><a href="#"><span class="icon"></span>预约维修服务</a></li>
+                <li><a href="#"><span class="icon"></span>7天无理由退货</a></li>
+                <li><a href="#"><span class="icon"></span>15天免费换货</a></li>
+                <li><a href="#"><span class="icon"></span>满99元包邮</a></li>
+                <li class="end"><a href="#"><span class="icon"></span>520余家售后网点</a></li>
+            </ul>
+            <hr>
+            <!-- 底部菜单 -->
+            <div class="footerlist">
+                <div class="footernav2">
+                    <span>帮助中心</span>
+                    <ul>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                    </ul>
+                </div>
+                <div class="footernav2">
+                    <span>服务支持</span>
+                    <ul>
+                        <li><a href="#">售后政策</a></li>
+                        <li><a href="#">自助服务</a></li>
+                        <li><a href="#">相关下载</a></li>
+                    </ul>
+                </div>
+                <div class="footernav2">
+                    <span>线下门店</span>
+                    <ul>
+                        <li><a href="#">小米之家</a></li>
+                        <li><a href="#">服务网点</a></li>
+                        <li><a href="#">授权体验店</a></li>
+                    </ul>
+                </div>
+                <div class="footernav2">
+                    <span>关于小米</span>
+                    <ul>
+                        <li><a href="#">了解小米</a></li>
+                        <li><a href="#">加入小米</a></li>
+                        <li><a href="#">投资者关系</a></li>
+                        <li><a href="#">企业社会责任</a></li>
+                        <li><a href="#">廉洁举报</a></li>
+                    </ul>
+                </div>
+                <div class="footernav2">
+                    <span>关注我们</span>
+                    <ul>
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">官方微信</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">公益基金会</a></li>
+                    </ul>
+                </div>
+                <div class="footernav2 endnav2">
+                    <span>特色服务</span>
+                    <ul>
+                        <li><a href="#">F码通道</a></li>
+                        <li><a href="#">礼物码</a></li>
+                        <li><a href="#">防伪查询</a></li>
+                    </ul>
+                </div>
+                <div class="footernavy">
+                    <span class="navy1">400-100-5678</span>
+                    <span class="navy2">8:00-18:00(仅收市话费)</span>
+                    <span class="navy3">人工客服</span>
+                    <span class="navy2">关注小米：微博微信</span>
+                </div>
+            </div>
+            
+            <div class="footernav6">
+                <ul>
+                    <li><a href="#">小米商城</a></li>
+                    <li><a href="#">MIUI</a></li>
+                    <li><a href="#">米家</a></li>
+                    <li><a href="#">米聊</a></li>
+                    <li><a href="#">多看</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">政企服务</a></li>
+                    <li><a href="#">小米天猫店</a></li>
+                    <li><a href="#">小米集团隐私政策</a></li>
+                    <li><a href="#">小米公司儿童信息保护规则</a></li>
+                    <li><a href="#">小米商城隐私政策</a></li>
+                    <li><a href="#">小米商城用户协议</a></li>
+                    <li><a href="#">问题反馈</a></li>
+                    <li class="lastone"><a href="#">Select Location</a></li>
+                    
+                </ul>
+                <p>&copy;mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号</p>
+                <p>（京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 营业执照 医疗器械质量公告</p>
+                <p>增值电信业务许可证 网络食品经营备案 京食药网食备201810017   食品经营许可证</p>
+                <p>违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>   
+            </div>
+             
+                
+                
+                
+            
+        </div>
+
+    </div>
+</body>
+</html>
